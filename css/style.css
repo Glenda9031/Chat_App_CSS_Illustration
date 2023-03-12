@@ -1,19 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Rubik', sans-serif;
-    font-size: 16px;
-}
-
-html {
-    height: 100%;
+    box-sizing: border-box;
 }
 
 :root {
 
-    /*  Text  */
+    /*  colors - primary  */
 
     --pale-violet: hsl(276, 100%, 81%);
     --moderate-violet: hsl(276, 55%, 52%);
@@ -30,25 +23,63 @@ html {
     /*  Secondary  */
 
     --white: hsl(0, 0%, 100%);
+    --light-violet: hsl(264, 100%, 61%);
     --light-grayish-violet: hsl(270, 20%, 96%);
     --very-dark-desaturated-violet: hsl(271, 36%, 24%);
     --very-light-magenta: hsl(289, 100%, 72%);
-    
+
+    /* Typography */
+
+    --font-size-primary: 16px;
+    --font-family: 'Rubik', sans-serif;
+
+    /* Breakpoints */
+
+    --mobile-width: 375px;
+    --desktop-width: 1440px;
+
+    /* Borders */
+
+    --outside-border-radius: 30px;
+    --inside-border-radius: 25px;
+
+    /* Quick Custom */
+
+    --app-background: hsl(270, 20%, 96%);
 }
 
 body {
     background-color: var(--light-grayish-violet);
-    height: 100%;
 }
 
 .container {
-    max-width: 1450px;
-    margin: 0 auto;
-    max-height: 800px;
-    height: 100%;
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 2rem;
+    padding-inline: 1rem;
+    width: var(--mobille-width);
+    margin-inline: auto;
+    margin-block: 2rem;
+    justify-items: center;
+    align-items: center;
 }
 
-.roundedPurpleModel {
-    background: 
+
+/* Typography */
+
+h1, p, .phone-wrapper, .footer {
+    font-family: 'Rubik', sans-serif;
+}
+
+p {
+    color: var(--desaturated-dark-violet);
+}
+
+/* Main Text */
+
+.main {
+    min-width: 300px;
+    max-width: 400px;
+    text-align: center;
 }
 

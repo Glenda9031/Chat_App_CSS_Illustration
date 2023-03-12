@@ -6,88 +6,69 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="css/style.css">
-  
   <title>Frontend Mentor | Chat App CSS Illustration</title>
+
 </head>
 <body>
-  
-<div class="container">
-<div class="roundedPurpleModel"></div>
-<div class="mobile">
-  <header>
-    <div class="note"></div>
-    <div class="flex">
-      <div class="content">
-        <i class="material-icons">chevron_left</i>
-        <div class="user">
-          <img src="./images/avatar.jpg" alt="avatar" height="30px">
-          <h6>Samuel Green<br><p>Available to Walk</p></h6>
-        </div> 
+  <div class="shape"></div>
+
+  <div class="container">
+    <header>
+      <section class="phone-wrapper">
+        <div class="phone-background">
+          <div class="header-wrapper">
+            <i class="fa fa-angle-left bold"></i>
+            <img src="images/avatar.jpg" alt="avatar" class="avatar">
+            <div class="header-text">
+              <span class="header-title bold">Samuel Green</span>
+              <span class="subheader bold">Available to Walk</span>
+            </div>
+            <i class="fa fa-ellipsis-v light" aria-hidden="true"></i>
+          </div>
+        </div>
+
+        <div class="chat chat-left">That sounds great. I’d be happy with that.</div>
+        <div class="chat chat-left">Could you send over some pictures of your dog, please?</div>
+   
+        <div class="chat-img">
+          <img src="images/dog-image-1.jpg" alt="dog1">
+          <img src="images/dog-image-2.jpg" alt="dog2">
+          <img src="images/dog-image-3.jpg" alt="dog3">
+        </div>
+
+        <div class="hat chat-right">Here are a few pictures. She’s a happy girl!</div>
+        <div class="chat chat-right">Can you make it?</div>
+
+        <div clas="chat chat-left">She looks so happy! The time we discussed works. How long shall I take her out for?</div>
+        <div class="chat chat-special chat-left">
+          <span class="dot">30 minute walk</span>
+          <span class="chat-price">$29</span>
+        </div>
+
+        <div class="chat chat-special chat-left">
+          <span class="dot">1 hour walk</span>
+          <span class="dot">$49</span>
+        </div>
+
+        <div class="chat-field">
+          <p>Type a message…</p>
+          <i class="fa-3x fa-solid fa-circle-chevron-right"></i>
+        </div>
       </div>
-        <i class="material-icons">more_vert</i>
-    </div>
-  </header>
+    </section>
+    </header>
 
-  <main>
-  <div class="chat">
-    <ul class="mensagens1">
-      <li>That sounds great. I’d be happy with that.</li>
-      <li>Could you send over some pictures of your dog, please?</li>
-    </ul>
+    <main class="main">
+      <h1 class="titlle">Simple booking</h1>
+      <p class="descriptionn">Stay in touch with our dog walkers through the chat interface. This makes it easy to 
+        discuss arrangements and make bookings. Once the walk has been completed you can rate 
+        your walker and book again all through the chat.</p>
+    </main>
 
-    <ul class="mensagens2">
-      <li class="imagens">
-        <img src="./images/dog-image-1.jpg" alt="dog" height="40px">
-        <img src="./images/dog-image-2.jpg" alt="dog" height="40px">
-        <img src="./images/dog-image-3.jpg" alt="dog" height="40px">
-      </li>
-      <li class="mensagens2">Here are a few pictures. She’s a happy girl!</li>
-      <li class="mensagens2">Can you make it?</li>
-    </ul>
-    <ul class="mensagens1">
-      <li>She looks so happy! The time we discussed works. How long shall I take her out for?</li>
-    </ul>
-    <ul class="prices">
-      <li>
-        <div class="w-80">
-          <div class="circle"></div>
-          <p class="action">30 minute walk</p>
-        </div>
-        <span class="price">$29</span>
-      </li>
-      <li>
-        <div class="w-80">
-          <div class="circle"></div>
-          <p class="action">1 hour walk</p>
-        </div>
-        <span class="price">$49</span>
-      </li>
-    </ul>
+    <footer class="footer">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Glenda J. Reed</a>.
+    </footer>
 
-    <div class="buttonSubmit">
-      <input type="text" placeholder="Type a message...">
-      <button>
-        <i class="material-icons">chevron_right</i>
-      </button> 
-    </div>
-  </div>
-</div>
-<div class="conteudo">
-  <h2>Simple booking</h2>
-  <p>Stay in touch with our dog walkers through the chat interface. This makes it easy to 
-    discuss arrangements and make bookings. Once the walk has been completed you can rate 
-    your walker and book again all through the chat.</p>
-</div>
-<div class="roundedPinkModel"></div>
-</div>
-</main>
-  
-  
-  <footer>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Glenda J. Reed</a>.
-  </div>
-</footer>
 </body>
 </html>
