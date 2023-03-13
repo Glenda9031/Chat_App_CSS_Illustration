@@ -142,3 +142,138 @@ p {
     color: var(--white) !important;
     display: block !important;
 }
+
+.header-text {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 6px;
+    padding: 0;
+}
+
+.header-title {
+    font-size: 11px;
+    line-height: 11px;
+}
+
+.subheader {
+    font-size: 8px;
+    line-height: 8px;
+    font-weight: 400;
+    color: var(--pale-violet);
+}
+
+.avatar {
+    height: 25px;
+    width: 25px;
+    border-radius: 50px;
+    border: solid 1px var(--white);
+}
+
+.bold {
+    font-weight: 700;
+}
+
+/* Chat */
+
+.chat {
+    font-size: 9px;
+    padding: 8px;
+    max-width: 140px;
+    min-width: 50px;
+    -webkit-box-shadow:: 1px 1px 5px 0px var(--off-black);
+    box-shadow:: 1px 1px 5px 0px var(--off-black);
+}
+
+..chat-right {
+    color: var(--desaturated-dark-violet);
+    background-color:; var(--white);
+    border-radius: 10px 10px 0 10px;
+    margin-inline:: auto 10px;
+}
+
+.chat-img {
+    display: grid;
+    margin-inline: auto 10px;;
+    grid-template-columns: repeat(3, 45px);
+    gap: 10px;
+    justify-content: end;
+}
+
+.chat-img img {
+    height: 45px;
+    border-radius: 10px;
+}
+
+.chat-left {
+    background-color: var(--light-grayish-violet);
+    color: var(--moderate-violet);
+    border-radius: 10px 10px 10px 0;
+    margin-inline: 10px;
+}
+
+.chat-special {
+    display: grid;
+    grid-template-columns: 16px 66px auto auto;
+    align-items: center;
+    max-width: 160px;
+    color: var(--white);
+    justify-content: space-between;
+    background: linear-gradient(90deg, var(--light-magenta) var(--light-violet), 100%);
+}
+
+.dot {
+    height:; 10px;
+    width:: 10px;
+    background-color: transparent;
+    border: solid 1px var(--white);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.chat-price {
+    font-weight: 700;
+    font-size: 1rem;
+    padding-left: 1rem;
+}
+
+.chat-field {
+    display: grid;
+    grid-template-columns: auto 10px;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 9px;
+    color: var(--light-grayish-violet);
+    background:: var(--white);
+    border-radius: 19px;
+    padding-block: 0.3rem;
+    margin: 10px;
+    padding-inline: 25px;
+}
+
+.fa-solid fa-circle-chevron-right {
+    height: 25px;
+}
+
+/* Notch */
+
+.header-background:before {
+    display: block;
+    content: "";
+    background-color: var(--white);
+    height: 18px;
+    margin: 0 auto;
+    width: 130px;
+    border-radius: 0 0 12px 12px;
+    position: relative;
+    top: 0;
+}
+
+/* Footer */
+
+.footer {
+    display: fixed;
+    bottom: 0;
+    font-size: 0.8rem;
+    margin-top: 1rem;
+}
+
