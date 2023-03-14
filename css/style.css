@@ -277,3 +277,35 @@ p {
     margin-top: 1rem;
 }
 
+@media only screen and (min-width: 600px) {
+    .container {
+        display: grid;
+        width: 60%;
+        max-width: var(--desktop-width);
+        margin: auto;
+        grid-template-columns: auto auto;
+        margin-block: 3rem;
+        justify-items: center;
+        align-content: center;
+    }
+
+    .shape {
+        left: -80px;
+        height: 600px;
+        width: 450px;
+    }
+
+    .description {
+        text-align: left;
+    }
+
+    /* Footer */
+
+    .footer {
+        position: absolute;
+        bottom: 0;
+        padding: 1rem;
+        text-align: center;
+        width: 100%;
+    }
+}
