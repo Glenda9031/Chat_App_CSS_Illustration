@@ -1,56 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
-
-* {
-    box-sizing: border-box;
-}
-
 :root {
-
-    /*  colors - primary  */
-
+    /*COLORS*/
+    /*primary*/
     --pale-violet: hsl(276, 100%, 81%);
     --moderate-violet: hsl(276, 55%, 52%);
-    --desaturated-dark-violet: hsl(271, 15%, 43%);
-    --grayish-blue: hsl(206, 6%, 79%);
-    --very-dark-desaturated-violet: hsl(271, 36%, 24%);
-    --dark-grayish-violet: hsl(270, 7%, 64%);
-
-    /*  Gradients  */
-
+    --dark-desaturated: hsl(271, 15%, 43%);
+    --greyish-blue: hsl(206, 6%, 79%);
+    --verydark-violet: hsl(271, 36%, 24%);
+    --darkgrey-violet: hsl(270, 7%, 64%);
+    /*GRADIENTS*/
     --light-magenta: hsl(293, 100%, 63%);
     --light-violet: hsl(264, 100%, 61%);
-
-    /*  Secondary  */
-
-    --white: hsl(0, 0%, 100%);
-    --off-black: rgba(0, 0, 0,0.2);
+    /*secondary*/
+    --white-brand: hsl(0, 0%, 100%);
     --light-violet: hsl(264, 100%, 61%);
-    --light-grayish-violet: hsl(270, 20%, 96%);
-    --very-dark-desaturated-violet: hsl(271, 36%, 24%);
-    --very-light-magenta: hsl(289, 100%, 72%);
-
-    /* Typography */
-
+    --light-greyviolet: hsl(270, 20%, 96%);
+    --light-magenta: hsl(289, 100%, 72%);
+    /*TYPOGRAPHY*/
     --font-size-primary: 16px;
     --font-family: 'Rubik', sans-serif;
-
-    /* Breakpoints */
-
+    /*BREAKPOINTS*/
     --mobile-width: 375px;
     --desktop-width: 1440px;
-
-    /* Borders */
-
+    /*BORDERS*/
     --outside-border-radius: 30px;
     --inside-border-radius: 25px;
-
-    /* Quick Custom */
-
+    /*QUICK CUSTOM*/
     --app-background: hsl(270, 20%, 96%);
+    
+}
+
+
+*{
+    box-sizing:border-box;
 }
 
 body {
-    background-color: var(--light-grayish-violet);
+    background-color: var(--light-greyviolet);
 }
 
 .container {
@@ -58,25 +43,25 @@ body {
     grid-template-rows: auto auto;
     gap: 2rem;
     padding-inline: 1rem;
-    width: var(--mobille-width);
+    width: var(--mobile-width);
     margin-inline: auto;
     margin-block: 2rem;
     justify-items: center;
     align-items: center;
 }
 
-
-/* Typography */
+/*TYPOGRAPHY*/
 
 h1, p, .phone-wrapper, .footer {
     font-family: 'Rubik', sans-serif;
 }
 
 p {
-    color: var(--desaturated-dark-violet);
+    color: var(--dark-desaturated);
 }
 
-/* Main Text */
+
+/*MAIN TEXT*/
 
 .main {
     min-width: 300px;
@@ -84,16 +69,18 @@ p {
     text-align: center;
 }
 
-/* Phone */
 
+
+/*PHONE */
 .phone-wrapper {
-    width: 200px;
+
+    width: 260px;
     height: 500px;
     border-radius: var(--outside-border-radius);
     padding: 10px;
-    background-color: var(--white);
-    -webkit-box-shadow: 9px 7px 22px 8px var(--off-black);
-    box-shadow: 9px 7px 22px 8px var(--off-black);
+    background-color: white;
+    -webkit-box-shadow: 9px 7px 22px 0px rgba(0,0,0,0.2);
+    box-shadow: 9px 7px 22px 0px rgba(0,0,0,0.2);
 }
 
 .phone-background {
@@ -110,22 +97,24 @@ p {
     z-index: -99;
     top: 0;
     left: -200px;
-    height: 500px;;
+    height: 500px;
     width: 400px;
-    background: linear-gradient(45deg, var(--light-violet), var(--light-magenta), 100%);
-    border: 0 0 500px 500px;
+    background: linear-gradient(45deg, var(--light-violet), var(--light-magenta) 100%);
+    border-radius: 0 0 500px 500px;
 }
 
-/* Purple Gradient */
 
+
+
+/*Purple Gradient Stuff*/
 .header-background {
     display: grid;
     grid-template-columns: auto;
-    color: var(--white);
+    color: white;
     height: 65px;
     border-radius: 20px 20px 8px 8px;
     align-items: start;
-    background: linear-gradient(90deg, var(--light-violet), var(--light-magenta), 100%);
+    background: linear-gradient(90deg, var(--light-violet), var(--light-magenta) 100%);
 }
 
 .header-wrapper {
@@ -138,8 +127,9 @@ p {
     align-items: center;
 }
 
+
 .fa-angle-left, .fa-ellipsis-v {
-    color: var(--white) !important;
+    color: white !important;
     display: block !important;
 }
 
@@ -147,12 +137,13 @@ p {
     display: grid;
     grid-template-rows: 1fr 1fr;
     gap: 6px;
-    padding: 0;
+    padding:0;
 }
 
 .header-title {
     font-size: 11px;
     line-height: 11px;
+
 }
 
 .subheader {
@@ -160,52 +151,56 @@ p {
     line-height: 8px;
     font-weight: 400;
     color: var(--pale-violet);
+
 }
 
 .avatar {
     height: 25px;
     width: 25px;
     border-radius: 50px;
-    border: solid 1px var(--white);
+    border: solid 1px white;
 }
 
-.bold {
-    font-weight: 700;
+.bold{
+    font-weight:700;
 }
 
-/* Chat */
+
+/*CHAT PART*/
 
 .chat {
     font-size: 9px;
     padding: 8px;
-    max-width: 140px;
-    min-width: 50px;
-    -webkit-box-shadow:: 1px 1px 5px 0px var(--off-black);
-    box-shadow:: 1px 1px 5px 0px var(--off-black);
+    max-width:140px;
+    min-width:50px;
+    -webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.2);
+    box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.2);
 }
 
-..chat-right {
-    color: var(--desaturated-dark-violet);
-    background-color:; var(--white);
+.chat-right {
+    color: var(--dark-desaturated);
+    background-color: white;
     border-radius: 10px 10px 0 10px;
-    margin-inline:: auto 10px;
+    margin-inline: auto 10px;
 }
+
 
 .chat-img {
     display: grid;
-    margin-inline: auto 10px;;
-    grid-template-columns: repeat(3, 45px);
+    margin-inline: auto 10px;
+    grid-template-columns: repeat(3,45px);
     gap: 10px;
     justify-content: end;
 }
 
-.chat-img img {
-    height: 45px;
-    border-radius: 10px;
+.chat-img img{
+    height:45px;
+    border-radius:10px;
 }
 
+
 .chat-left {
-    background-color: var(--light-grayish-violet);
+    background-color: var(--light-greyviolet);
     color: var(--moderate-violet);
     border-radius: 10px 10px 10px 0;
     margin-inline: 10px;
@@ -216,77 +211,84 @@ p {
     grid-template-columns: 16px 66px auto auto;
     align-items: center;
     max-width: 160px;
-    color: var(--white);
-    justify-content: space-between;
-    background: linear-gradient(90deg, var(--light-magenta) var(--light-violet), 100%);
+    color: white;
+    justify-content:space-between;
+    background: linear-gradient(90deg, var(--light-magenta), var(--light-violet) 100%);
 }
 
 .dot {
-    height:; 10px;
-    width:: 10px;
+    height: 10px;
+    width: 10px;
     background-color: transparent;
-    border: solid 1px var(--white);
+    border:solid 1px white;
     border-radius: 50%;
     display: inline-block;
 }
 
-.chat-price {
-    font-weight: 700;
+
+.chat-price{
+    font-weight:700;
     font-size: 1rem;
-    padding-left: 1rem;
+    padding-left:1rem;
 }
 
 .chat-field {
-    display: grid;
-    grid-template-columns: auto 10px;
-    align-items: center;
-    justify-content: space-between;
+    display:grid;
+    grid-template-columns:auto 10px;
+    align-items:center;
+    justify-content:space-between;
     font-size: 9px;
-    color: var(--light-grayish-violet);
-    background:: var(--white);
+    color: var(--light-greyviole);
+    background:white;
     border-radius: 19px;
     padding-block: 0.3rem;
     margin: 10px;
-    padding-inline: 25px;
+    padding-inline:25px;
 }
 
 .fa-solid fa-circle-chevron-right {
-    height: 25px;
+    height:25px;
 }
 
-/* Notch */
 
+    
+/*NOTCH*/
 .header-background:before {
     display: block;
     content: "";
-    background-color: var(--white);
+    background-color: var(--white-brand);
     height: 18px;
-    margin: 0 auto;
+    margin: 0  auto;
     width: 130px;
     border-radius: 0 0 12px 12px;
     position: relative;
     top: 0;
 }
 
-/* Footer */
+
+
+/*FOOTER*/
 
 .footer {
-    display: fixed;
-    bottom: 0;
-    font-size: 0.8rem;
-    margin-top: 1rem;
+   display:fixed;
+   bottom:0;
+   font-size:0.8rem;
+   margin-top:1rem;
 }
 
+
 @media only screen and (min-width: 600px) {
+
+    
     .container {
         display: grid;
-        width: 60%;
-        max-width: var(--desktop-width);
-        margin: auto;
+        width:60%;
+        max-width:var(--desktop-width);
+        margin:auto;
         grid-template-columns: auto auto;
         margin-block: 3rem;
         justify-items: center;
-        align-content: center;
+        align-content:center
     }
 
     .shape {
@@ -295,12 +297,11 @@ p {
         width: 450px;
     }
 
-    .description {
-        text-align: left;
+    .description{
+        text-align:left;
     }
 
-    /* Footer */
-
+    /*FOOTER*/
     .footer {
         position: absolute;
         bottom: 0;
@@ -309,3 +310,4 @@ p {
         width: 100%;
     }
 }
+Footer
